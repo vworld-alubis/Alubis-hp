@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Abel;
+	src: url(/Alubis-hp/fonts/Abel/Abel-Regular.ttf);
+}
+
+@keyframes backGradation {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+html {
+  height: 100%;
+}
+
+body {
+	background: linear-gradient(45deg,#0b0a24,#1a1d3d,#212b47);
+	background-size: 600% 600%;
+	animation: backGradation 20s ease infinite;
+}
+
+h1 {
+	font-family: Abel;
+	font-size: 70px;
+	text-align: center;
+	color: #ffffff;
+	background: -webkit-linear-gradient(-65deg,#ffffff,#4fedff,#ebf2ff,#4fc7ff,#ffffff,#4fedff,#ebfff9,#4ffff6,#ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
