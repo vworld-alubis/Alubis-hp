@@ -1,8 +1,9 @@
-@font-face {
+/*@font-face {
 	font-family: "hexagon";
 	src: url("Alubis-hp/fonts/Hexagon/hexagon.ttf");
-}
+}*/
 
 h1 {
-	font-family: hexagon;
+	/*font-family: hexagon;*/
+	font-color: blue;
 }
