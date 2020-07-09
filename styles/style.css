@@ -3,6 +3,37 @@
 	src: url("Alubis-hp/fonts/Hexagon/hexagon.ttf");
 }
 
-h1 {
+div.logo {
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+}
+
+.logo img {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -5px;
+	left: 40px;
+	width: 90px;
+	height: 90px;
+}
+
+.logo span {
+	vertical-align: top;
+	position: relative;
+	top: -30px;
+	left: 15px;
+	font-size: 23px;
+	font-style: italic;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+.logo h1 {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0px;
+	font-size: 60px;
 	font-family: hexagon;
 }
