@@ -5,8 +5,11 @@
 
 div.logo {
 	text-align: center;
+	margin-top: 25px;
 	height: 80px;
 	line-height: 80px;
+	position: relative;
+	left: -50px;
 }
 
 .logo img {
@@ -36,4 +39,71 @@ div.logo {
 	margin-top: 0px;
 	font-size: 60px;
 	font-family: hexagon;
+}
+
+.hexleft {
+	float: left;
+	margin-left: 225px;
+}
+
+.hexright {
+	float: right;
+	margin-right: 225px;
+}
+
+.hexleft,
+.hexright {
+    margin-top: 100px;
+    width: 155px;
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    background: #ddd;
+    transition: all 0.2s linear;
+}
+
+.hexleft span,
+.hexright span {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    color: #000;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.hexleft:before,
+.hexright:before,
+.hexleft:after,
+.hexright:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ddd;
+    transition: all 0.2s linear;
+    z-index: 0;
+}
+
+.hexleft:before,
+.hexright:before {
+    transform: rotate(60deg);
+}
+ 
+.hexleft:after,
+.hexright:after {
+    transform: rotate(-60deg);
+}
+ 
+.hexleft:hover,
+.hexright:hover
+.hexleft:hover:before,
+.hexright:hover:before,
+.hexleft:hover:after,
+.hexright:hover:after {
+    background: #bbb;
 }
